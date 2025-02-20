@@ -1,0 +1,50 @@
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+p {
+  color: #444;
+  font-size: 1.1em;
+  margin: 15px 0;
+}
+
+/* Style for contact information */
+p:nth-of-type(1),
+p:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+p:nth-of-type(1)::before {
+  content: "📞";
+}
+
+p:nth-of-type(2)::before {
+  content: "📧";
+}
+
+p:nth-of-type(3) {
+  margin-top: 25px;
+  font-weight: bold;
+}
+
+/* Address styling */
+p:last-child {
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
